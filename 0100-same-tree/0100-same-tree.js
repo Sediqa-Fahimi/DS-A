@@ -34,7 +34,7 @@ var isSameTree = function(p, q) {
         pnode = pq.shift();
         qnode = qq.shift();
         
-        if(!check(pnode,qnode)) return false;
+        // if(!check(pnode,qnode)) return false;
         
         if(pnode !== null){
         
@@ -49,7 +49,6 @@ var isSameTree = function(p, q) {
               qq.push(qnode.right);
             }
         }
-       
     }
     return true;
 };
