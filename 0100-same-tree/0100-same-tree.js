@@ -36,19 +36,19 @@ var isSameTree = function(p, q) {
         
         // if(!check(pnode,qnode)) return false;
         
-        // if(pnode !== null){
+        if(pnode !== null){
         
             if (!check(pnode.left, qnode.left)) return false;
-            if (pnode.left != null) {
+            // if (pnode.left != null) {
               pq.push(pnode.left);
               qq.push(qnode.left);
-            }
+            // }
             if (!check(pnode.right, qnode.right)) return false;
-            if (pnode.right != null) {
+            // if (pnode.right != null) {
               pq.push(pnode.right);
               qq.push(qnode.right);
-            }
-        // }
+            // }
+        }
     }
     return true;
 };
