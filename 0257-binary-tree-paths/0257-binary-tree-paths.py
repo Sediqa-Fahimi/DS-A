@@ -23,7 +23,7 @@ class Solution:
         
 #         return paths
     
-    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]: # O(N) time | O(N) space
         if not root: 
             return []
         
