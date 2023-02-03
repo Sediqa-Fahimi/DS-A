@@ -9,21 +9,21 @@ class Solution:
             "D": 500,
             "M": 1000
         }
-        romans = [*s]
-        sum_int = 0
+        roman_numerals = [*s]
+        sum_integer = 0
         prev_value = 0
-        for i in range(len(romans)-1, -1, -1):
-            roman = romans[i]
-            roman_value = values[roman]
+        for i in range(len(roman_numerals)-1, -1, -1):
+            roman_numeral = roman_numerals[i]
+            numeral_value = values[roman_numeral]
             
-            if roman_value < prev_value:
-                sum_int -= roman_value
+            if numeral_value < prev_value:
+                sum_integer -= numeral_value
             else:
-                sum_int += roman_value
+                sum_integer += numeral_value
                 
-            prev_value = roman_value
+            prev_value = numeral_value
             
-        return sum_int
+        return sum_integer
                 
                 
             
