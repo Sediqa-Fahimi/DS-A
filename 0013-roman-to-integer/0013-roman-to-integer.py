@@ -1,5 +1,5 @@
 class Solution:
-    def romanToInt(self, s: str) -> int:
+    def romanToInt(self, s: str) -> int: # O(N) time | O(1) space 
         values = {
             "I": 1,
             "V": 5,
