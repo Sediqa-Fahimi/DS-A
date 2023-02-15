@@ -15,7 +15,6 @@ class Solution:
     
 
     def dfs(self, grid, row, col, visited):
-        print(row, col)
         visited.add((row,col))
         directions = [[-1,0],[1, 0],[0,-1],[0,1]]
         for dir in directions:
