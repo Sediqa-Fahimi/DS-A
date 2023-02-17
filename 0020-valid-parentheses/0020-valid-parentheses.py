@@ -10,9 +10,11 @@ class Solution:
                 if not stack:
                     return False
                 
-                recentChar = stack.pop()
-                if (recentChar, charCode) not in validCodes:
+                if (stack[-1], charCode) in validCodes:
+                    stack.pop()
+                else:
                     return False
+                    
                 
         return len(stack) == 0
         
